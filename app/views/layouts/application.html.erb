@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My_Portfolio</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="row">
+      <%= render("layouts/navbar")%>
+    </div>
+
+    <div class="row yield">
+      <div class="row userheader">
+        <% if admin_signed_in? %>
+          <li class="listdecorations">
+          <%= link_to('Logout', destroy_admin_session_path, class:"btn", :method => :delete) %>
+          </li>
+        <% end %>
+      </div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+  </div>
+
+  <div class="row">
+    <%= render("layouts/footer")%>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<div class="container text-center">
+
+  <%= render 'layouts/errors', :object => @category %>
+
+  <%= form_for @category, html: {multipart: true} do |f| %>
+    <%= f.label :language %>
+    <%= f.text_field :language %><br/>
+    <%= f.label :image %>
+    <%= f.file_field :image %><br/>
+    <%= f.label :rating %>
+    <%= f.number_field :rating %><br/>
+    <%= f.label :description %>
+    <%= f.text_area :description, size: "24x6"%><br/>
+    <%= f.submit class: "btn btn-large btn-primary"%>
+  <% end %>
+</div>

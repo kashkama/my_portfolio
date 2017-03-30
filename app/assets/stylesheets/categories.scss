@@ -1,0 +1,28 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.welcomecategories{
+  color:#cb3f66;
+  font-family: Courier New, Monospace;
+  font-weight: bolder;
+}
+
+.align{
+  display:inline;
+
+}
+
+.listdecorations{
+  list-style: none;
+}
+ // panel
+ .panelcenter{
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding: 0px;
+ }
+.btn{
+  margin-bottom: 10px;
+}

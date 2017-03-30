@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "categories.scss";
+ @import "projects.scss";
+ @import "home.scss";
+
+// navbar
+ .navbar{
+   margin-bottom: 0px;
+ }
+ .navbar-inverse {
+    background-color: rgb(6, 86, 88);
+    border-color: #968c8c;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #f1b7af;
+  }
+ .owenbrand{
+   font-family: 'Russo One', sans-serif;
+ }
+
+ .pages{
+   font-family: 'Baloo Bhaina', cursive;
+   font-size: 15px;
+ }
+ .row{
+   margin-left: 0px;
+   margin-right: 0px;
+ }
+
+ .navbar-fixed-top{
+   position: initial;
+ }
+ .navbar-inverse .navbar-brand{
+   color: #ff0000;
+   text-align: center;
+   float: inherit;
+   font-size: 25px;
+ }
+ .goright{
+   float: right;
+   margin-right: 30px;
+ }
+ .navabout{
+   float: left;
+   padding: 15px 15px;
+   font-size: 15px;
+   line-height: 20px;
+   height: 50px;
+ }
+
+// yield
+ .yield{
+   font-family: Monospace;
+   font-size: 18px;
+ }
+ // footer
+ .footer{
+   background-color: rgb(6, 86, 88);
+   border-color: #968c8c;
+ }
+  .footerposition{
+     bottom: 0;
+     width: 100%;
+  }
+  .title{
+    font-weight: bolder;
+    color:#000000;
+  }

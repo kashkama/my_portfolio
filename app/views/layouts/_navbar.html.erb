@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid text-center">
+      <div class="navbar-header">
+        <a class="navbar-brand active owenbrand" <%= link_to "OWENBRAND", root_path%></a>
+      </div>
+      <ul class="nav navbar-nav pages">
+        <li><%= link_to "Skills",   '#' %></li>
+        <li><%= link_to "About",   '#' %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Sign up", new_admin_registration_path %></li>
+        <li><%= link_to "Sign in", admin_session_path %></li>
+      </ul>
+    </div>
+  </nav>
+ </header>

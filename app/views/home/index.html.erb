@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<h1>Welcome to my Portfolio</h1>
+
+<div class="row">
+  <hr/>
+  <ul class="listdecorations">
+    <% @categories.each() do |category|%>
+      <li class="skills"><%= link_to category.language, home_path(category)%></li>
+      <hr/>
+    <%end%>
+  </ul>
+</div>

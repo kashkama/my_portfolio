@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+
+  <div class="container text-center">
+  <h1 class="welcomecategories">Welcome</h1>
+
+  <h3>My Skills</h3>
+
+  <!--Panel-->
+  <ul class="listdecorations">
+    <% @categories.each() do |category|%>
+
+    <div class="container panel panelcenter">
+        <div class="panel panel-default">
+        <div class="panel-heading"><li><%=link_to category.language, category_path(category)%></li>
+</div>
+        <div class="panel-body">Panel Content</div>
+        <a class="btn btn-danger" <%= link_to "projects", category_path(category)%></a>
+      </div>
+    </div>
+    <%end%>
+
+  </ul>
+
+  <!--/.Panel-->
+
+  <a class="btn btn-primary"<%= link_to "New Category", new_category_path %></a>
+</div>
