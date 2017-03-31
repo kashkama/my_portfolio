@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 
+<% if user_signed_in? %>
+  <li class="listdecorations">
+  <%= link_to('Logout', destroy_user_session_path, class:"btn", :method => :delete) %>
+  </li>
+<% end %>
 <h1>Welcome to my Portfolio</h1>
 
 <div class="row">
@@ -7,6 +12,16 @@
   <ul class="listdecorations">
     <% @categories.each() do |category|%>
       <li class="skills"><%= link_to category.language, home_path(category)%></li>
+      <hr/>
+    <%end%>
+  </ul>
+</div><hr/>
+<div class="row">
+  <h3 class="text-center">POSTS</h3>
+  <ul class="listdecorations">
+    <% @posts.each() do |post|%>
+      <li class="posttitle"><%= post.title%></li>
+      <li class="postarticle"><%= post.article%></li>
       <hr/>
     <%end%>
   </ul>

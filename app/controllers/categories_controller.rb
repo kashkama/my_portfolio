@@ -2,6 +2,8 @@ class CategoriesController < ApplicationController
   before_action :authenticate_admin!, only: [:index, :show]
 
   def index
+    @posts = Post.all
+
     @categories = Category.all
   end
 

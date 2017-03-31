@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<div class="container">
+  <h1>POSTS</h1>
+
+  <!--Panel-->
+  <ul class="listdecorations">
+    <% @posts.each() do |post|%>
+
+    <div class="container panel panelcenter">
+      <div class="panel panel-default">
+        <div class="panel-heading"><li><%= post.title%></li>
+        </div>
+        <div class="panel-body">
+          <li><%=post.article%><br/>  <%= link_to "Edit", edit_post_path(post), class: "btn btn-primary" %> <%= link_to "Delete", post_path(post),class: "btn btn-danger", :data => {:confirm => "Are you sure?", :method => "delete"}%></li>
+        </div>
+
+      </div>
+    </div>
+    <%end%>
+
+  </ul>
+
+  <!--/.Panel-->
+  <a class="btn btn-primary"<%= link_to "New Post", new_post_path %></a>
+</div>
