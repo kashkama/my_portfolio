@@ -20,12 +20,11 @@
       <div class="row userheader">
         <% if admin_signed_in? %>
           <li class="listdecorations">
-          <%= link_to('Logout', destroy_admin_session_path, class:"btn", :method => :delete) %>
+          <p>Hello, <%= current_admin.name %></p><%= link_to('Logout', destroy_admin_session_path, class:"btn", :method => :delete) %>
           </li>
         <% end %>
       </div>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+
       <%= yield %>
   </div>
 
