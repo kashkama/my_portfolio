@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<div class="container">
+    <h3>comments</h3>
+    <div class="row" id="comments">
+      <% @comments.each do |comment|%>
+        <div class="comment">
+          <%= simple_format comment.content%>
+        </div>
+      <%end%>
+    </div>
+</div>

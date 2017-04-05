@@ -1,32 +1,9 @@
 <!DOCTYPE html>
 
-<div class="container text-center">
-
-  <h1><%= @category.language%></h1><br/><br/>
-  <%= image_tag @category.image.url(:medium) %>
-  <div class="rating">
-    <p><%= @category.rating%></p>
-  </div>
-  <p><%= @category.description%></p>
-  <hr/>
-  <div class="container">
-
-  <% if @category.projects.any?%>
-  <ul class="listdecorations">
-    <% @category.projects.each do |project|%>
-      <li><h2><%= project.project%></h2></li>
-      <li><%= project.description%><br/></li>
-      <hr/>
-    <%end%>
-  </ul>
-  <%else%>
-    <p>The projects are under development!</p>
-  <%end%>
-  <hr/>
-
+<% if user_signed_in?%>
+<div class="row">
+  <%= render("/home/comment")%>
 </div>
-  <div class="container align">
-
-    <p><%= link_to "Return to Home", root_url%></p>
-  </div>
-</div>
+<%else%>
+  <%= render("/home/skill")%>
+<%end%>

@@ -9,7 +9,7 @@
 
     <div class="container panel panelcenter">
       <div class="panel panel-default">
-        <div class="panel-heading"><li><%= post.title%></li>
+        <div class="panel-heading"><li><%= link_to post.title, post_path(post)%></li>
         </div>
         <div class="panel-body">
           <li><%=post.article%><br/>  <%= link_to "Edit", edit_post_path(post), class: "btn btn-primary" %> <%= link_to "Delete", post_path(post),class: "btn btn-danger", :data => {:confirm => "Are you sure?", :method => "delete"}%></li>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<div class="container">
+  <h3 class="text-center">POSTS</h3>
+  <ul class="listdecorations">
+    <% @posts.each() do |post|%>
+      <li class="posttitle"><%= link_to post.title, home_path(post)%></li>
+      <li class="postarticle"><%= post.article%></li>
+      <hr/>
+    <%end%>
+  </ul>
+</div>

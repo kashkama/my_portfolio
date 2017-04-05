@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<div class="container">
+  <hr/>
+  <ul class="listdecorations">
+    <% @categories.each() do |category|%>
+      <li class="skills"><%= link_to category.language, home_path(category)%></li>
+      <hr/>
+    <%end%>
+  </ul>
+</div>
