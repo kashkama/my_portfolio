@@ -7,8 +7,12 @@ Rails.application.routes.draw do
 
   root :to => "home#index"
 
-  resources :home
-
+  resources :home do
+    member do
+      get :skill
+    end
+  end
+  
   resources :categories do
     resources :projects
   end

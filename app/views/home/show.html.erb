@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-
-<% if user_signed_in?%>
-<div class="row">
-  <%= render("/home/comment")%>
+<div class="container">
+  <h4><%= @post.title%></h4>
+  <div class="row container">
+    <p><%= @post.article%></p><hr/><br/>
+  </div>
+  <div class="row container">
+    <div class="row">
+      <%= render("/home/comments")%>
+    </div>
+    <%= link_to "New Comment",class:"btn"%>
+  </div>
 </div>
-<%else%>
-  <%= render("/home/skill")%>
-<%end%>
