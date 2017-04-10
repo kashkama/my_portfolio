@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<div class="container">
+  <%= render("/layouts/errors", :object => @comment)%>
+  <div class="row">
+    <div class="field">
+      <%= form_for [@commentable, @comment] do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %><br/>
+        <%= f.label :content %>
+        <%= f.text_area :content, size: "24x6"%><br/>
+        <%= f.submit class: "btn btn-large btn-primary"%>
+      <% end %>
+    </div>
+  </div>
+</div>

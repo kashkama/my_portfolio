@@ -3,8 +3,9 @@ class CreateProjects < ActiveRecord::Migration[5.0]
     create_table :projects do |t|
       t.column :project, :string
       t.column :description, :string
+      t.column :link, :string
       t.column :category_id, :integer
-      
+
       t.timestamps
     end
   end

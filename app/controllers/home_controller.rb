@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   def index
     @categories = Category.all
     @posts = Post.all
+    @comments = Comment.all
   end
 
   def show
@@ -14,4 +15,6 @@ class HomeController < ApplicationController
   def skill
     @category =  Category.find(params[:id])
   end
+
+
 end

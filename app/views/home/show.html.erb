@@ -8,6 +8,6 @@
     <div class="row">
       <%= render("/home/comments")%>
     </div>
-    <%= link_to "New Comment",class:"btn"%>
+    <%= link_to "New Comment", new_post_comment_path(@commentable), class:"btn"%>
   </div>
 </div>

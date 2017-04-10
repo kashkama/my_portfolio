@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       get :skill
     end
   end
-  
+
   resources :categories do
     resources :projects
   end

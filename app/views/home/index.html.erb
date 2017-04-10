@@ -1,18 +1,31 @@
 <!DOCTYPE html>
+<div class="container-fluid">
 
-<% if user_signed_in? %>
-  <li class="listdecorations">
-    <%= link_to('Logout', destroy_user_session_path, class:"btn", :method => :delete) %>
-  </li>
-<% end %>
-<h1>Welcome to my Portfolio</h1>
+  <% if user_signed_in? %>
+    <li class="listdecorations">
+      <%= link_to('Logout', destroy_user_session_path, class:"btn", :method => :delete) %>
+    </li>
+  <% end %>
+  <div class="row">
+    <%= render("home/jumbotron")%>
+  </div>
 
-<div class="row">
-  <%= render("/home/skills")%>
-</div><hr/>
+  <div class="row">
+    <%= render("home/about")%>
+  </div>
 
-<div class="row">
-  <%= render("/home/posts")%>
-</div>
-<div class="row">
+  <div class="row">
+    <%= render("/home/skills")%>
+  </div><hr/>
+
+  <div class="row">
+    <div class="container">
+      <%= link_to "references",class:"btn btn-primary"%>
+    </div>
+  </div>
+  <div class="row">
+    <%= render("/home/posts")%>
+  </div>
+  <div class="row">
+  </div>
 </div>

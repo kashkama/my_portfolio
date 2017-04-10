@@ -8,3 +8,33 @@
   text-decoration: none;
 
 }
+.commentname{
+  font-size: 10px;
+  color: #0299f9;
+}
+.commentdate{
+  font-size: 10px;
+}
+.col-6{
+  background-color: #eeeeee;
+}
+.border{
+  border-left: 4px solid #ffffff;
+}
+// jumbotron
+.jumbotron{
+  background-image:url(asset-path('3d_cubes.jpg'));
+}
+.display-3{
+  color: #0299f9;
+}
+.lead{
+  color: #0299f9;
+}
+.right{
+  float: right;
+  width:200px;
+  height:200px;
+  background-image: url(asset-path('myAvatar.png'));
+  background-size: 100%;
+}

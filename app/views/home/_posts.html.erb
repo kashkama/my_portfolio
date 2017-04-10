@@ -5,7 +5,8 @@
   <ul class="listdecorations">
     <% @posts.each() do |post|%>
       <li class="posttitle"><%= link_to post.title, home_path(post)%></li>
-      <li class="postarticle"><%= post.article%></li>
+      <li class="postarticle"><%= post.article%></li><br/>
+      <li>  <%= link_to "comment",  home_path(post)%> |<%=post.comments.count%> comments</li>
       <hr/>
     <%end%>
   </ul>

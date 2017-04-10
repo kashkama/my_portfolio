@@ -5,7 +5,9 @@
   <div class="container">
     <% @comments.each do |comment|%>
       <div class="comment">
+        <h6 class="commentname"><%= comment.name%></h6>
         <%= simple_format comment.content%>
+        <h6 class="commentdate"><%= "#{time_ago_in_words(comment.created_at)} ago"%></h6><hr/>
       </div>
     <%end%>
   </div>
