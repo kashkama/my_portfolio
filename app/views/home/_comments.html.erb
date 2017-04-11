@@ -3,7 +3,7 @@
 <div class="container">
   <h3>comments</h3>
   <div class="container">
-    <% @comments.each do |comment|%>
+    <% for comment in @comments%>
       <div class="comment">
         <h6 class="commentname"><%= comment.name%></h6>
         <%= simple_format comment.content%>

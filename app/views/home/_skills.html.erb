@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
 <div class="container">
-  <h2 class="text-center">SKILLS</h2>
+  <div id="skill">
+    <h2 class="text-center"><button class="btn btn-primary btn-lg btn-block" type="button" name="button">SKILLS</button></h2>
   <hr/>
   <ul class="listdecorations">
     <% @categories.each() do |category|%>
-      <li class="skills"><%= link_to category.language,  skill_home_path(category)%></li>
+      <li class="skills"><%= link_to category.language,  skill_home_path(category), class:"btn"%></li>
       <hr/>
     <%end%>
   </ul>
+</div>
 </div>

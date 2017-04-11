@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @commentable = @post
-    @comments = @commentable.comments
+    @comments = @commentable.comments.order('updated_at ASC')
   end
 
   def skill

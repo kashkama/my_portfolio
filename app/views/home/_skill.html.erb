@@ -15,7 +15,7 @@
   <ul class="listdecorations">
     <% @category.projects.each do |project|%>
       <li><h2><%= project.project%></h2></li>
-      <li><%= link_to "github", project.link, :target => "_blank" %></li>
+      <li><i class="fa fa-github fa-2x" aria-hidden="true"></i> <%= link_to "github", project.link, :target => "_blank" %></li>
       <li><%= project.description%><br/></li>
       <hr/>
     <%end%>

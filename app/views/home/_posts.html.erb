@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
 <div class="container">
-  <h3 class="text-center">POSTS</h3>
+  <div id="blog">
+  <h3 class="text-center"><button class="btn btn-primary btn-lg btn-block" type="button" name="button">BLOG</button></h3>
   <ul class="listdecorations">
     <% @posts.each() do |post|%>
-      <li class="posttitle"><%= link_to post.title, home_path(post)%></li>
+      <li class="posttitle"><%= link_to post.title, home_path(post)%></li><hr/>
       <li class="postarticle"><%= post.article%></li><br/>
-      <li>  <%= link_to "comment",  home_path(post)%> |<%=post.comments.count%> comments</li>
+      <li>  <%= link_to "comment",  home_path(post), class:"btn"%> |<%=post.comments.count%> comments</li>
       <hr/>
     <%end%>
   </ul>
+  </div>
 </div>
