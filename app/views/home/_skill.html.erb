@@ -2,14 +2,15 @@
 
 <div class="container text-center">
 
-  <h1><%= @category.language%></h1><br/><br/>
+  <h1><%= @category.language%></h1><br/><hr/>
   <%= image_tag @category.image.url(:medium) %>
   <div class="rating">
     <p><%= @category.rating%></p>
   </div>
   <p><%= @category.description%></p>
   <hr/>
-  <div class="container">
+  <h3 class="text-center">PROJECTS</h3>
+  <div class="container projectsection">
 
   <% if @category.projects.any?%>
   <ul class="listdecorations">

@@ -21,6 +21,13 @@
 .border{
   border-left: 4px solid #ffffff;
 }
+.projectsection{
+  border-radius: 25px;
+  border: 2px solid #303030;
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
 // jumbotron
 .jumbotron{
   background-image:url(asset-path('3d_cubes.jpg'));
