@@ -6,7 +6,7 @@
   <hr/>
   <ul class="listdecorations">
     <% @categories.each() do |category|%>
-      <li class="skills"><%= link_to category.language,  skill_home_path(category), class:"btn"%></li>
+      <li class="skills"><%= link_to category.language, class:"btn"%>| <%= link_to "Projects",  skill_home_path(category), class:"btn"%></li>
       <hr/>
     <%end%>
   </ul>
