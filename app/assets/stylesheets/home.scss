@@ -2,36 +2,53 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.skills{
+
+.img-circle {
+  background-size: 100%;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 5px 0px 5px 0px;
+}
+
+.skills {
   font-family: 'Russo One', sans-serif;
   font-size: 24px;
   text-decoration: none;
-
 }
-.commentname{
+
+.commentname {
   font-size: 10px;
   color: #0299f9;
 }
-.commentdate{
+
+.commentdate {
   font-size: 10px;
 }
-.col-6{
+
+.col-6 {
   background-color: #eeeeee;
 }
-.border{
+
+.border {
   border-left: 4px solid #ffffff;
 }
-.projectsection{
+
+.projectsection {
   border-radius: 25px;
   border: 2px solid #303030;
-    padding: 20px;
-    width: auto;
-    height: auto;
+  padding: 20px;
+  width: auto;
+  height: auto;
 }
 // skills
-.skill{
-  height:100px;
+
+.skill {
+  height: 100px;
   width: 100px;
-  color:#ffffff;
-  background-color:#68686b;
+  color: #ffffff;
+  background-color: #68686b;
 }
