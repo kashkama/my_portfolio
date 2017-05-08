@@ -28,20 +28,10 @@
     width: auto;
     height: auto;
 }
-// jumbotron
-.jumbotron{
-  background-image:url(asset-path('3d_cubes.jpg'));
-}
-.display-3{
-  color: #0299f9;
-}
-.lead{
-  color: #0299f9;
-}
-.right{
-  float: right;
-  width:200px;
-  height:200px;
-  background-image: url(asset-path('myAvatar.png'));
-  background-size: 100%;
+// skills
+.skill{
+  height:100px;
+  width: 100px;
+  color:#ffffff;
+  background-color:#68686b;
 }

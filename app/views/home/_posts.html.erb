@@ -2,7 +2,7 @@
 
 <div class="container">
   <div id="blog">
-  <h3 class="text-center"><button class="btn btn-primary btn-lg btn-block" type="button" name="button">BLOG</button></h3>
+  <h3 class="page-header">Blog</h3>
   <ul class="listdecorations">
     <% @posts.each() do |post|%>
       <li class="posttitle"><%= link_to post.title, home_path(post)%></li><hr/>

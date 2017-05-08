@@ -2,30 +2,58 @@
 <div class="container-fluid">
 
   <% if user_signed_in? %>
-    <li class="listdecorations">
-      <%= link_to('Logout', destroy_user_session_path, class:"btn", :method => :delete) %>
-    </li>
+  <li class="listdecorations">
+    <%= link_to('Logout', destroy_user_session_path, class:"btn", :method => :delete) %>
+  </li>
   <% end %>
-  <div class="row">
-    <%= render("home/jumbotron")%>
-  </div>
 
-  <div class="row">
-    <%= render("home/about")%>
-  </div>
+  <!-- Page Content -->
+  <div class="container">
 
-  <div class="row">
-    <%= render("/home/skills")%>
-  </div><hr/>
-
-  <div class="row">
-    <div class="container">
-
+    <!-- Portfolio Item Heading -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Portfolio
+          <small></small>
+        </h1>
+      </div>
     </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+      <div class="col-md-8">
+        <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+      </div>
+
+      <div class="col-md-4">
+        <h3>ABOUT</h3>
+        <p>I'm OWEN KAMAU a software developer specialized in Rails 5 and web development.If you need a sick responsive website project done that needs some creative injection then thats where i come in.My work is to develop your website so that it's
+          fuctional, responsive and has DRY business logic.I add personal touch to your product to make sure it's eye catching and easy to use.My AIM is to give your product identity in most creative way.</p>
+        <h3>CONTACT</h3>
+        <ul>
+        <li>
+          <a href="#">owen.kamau2014@gmail.com</a>
+        </li>
+        <li>Tel:(+254)701089898</li>
+        <li>Linkedin:</li>
+        <li>Github:kashkama</li>
+      </ul>
+    </div>
+
   </div>
+  <!-- /.row -->
+
+  <!-- Related Projects Row -->
   <div class="row">
-    <%= render("/home/posts")%>
+    <%= render("home/skills")%>
   </div>
+  <!-- /.row -->
+  <br>
   <div class="row">
+    <%= render("home/posts")%>
   </div>
+
 </div>
+<!-- /.container -->

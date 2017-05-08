@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-
-<div class="container">
-  <div id="skill">
-    <h2 class="text-center"><button class="btn btn-primary btn-lg btn-block" type="button" name="button">SKILLS</button></h2>
-  <hr/>
-    <ul class="listdecorations">
-      <% @categories.each() do |category|%>
-        <li class="skills"><%= link_to category.language, class:"btn"%>| <%= link_to "Projects",  skill_home_path(category), class:"btn"%></li>
-        <hr/>
-      <%end%>
-    </ul>
+<div id="skill">
+<div class="col-lg-12">
+  <h3 class="page-header">SKILLS</h3>
 </div>
+<% @categories.each() do |category|%>
+<div class="col-sm-3 col-xs-6">
+  <%= link_to skill_home_path(category), :action => 'go' do %>
+    <div class="skill">
+      <p class="text-center"><%= category.language%></p>
+      <p class="text-center">projects</p>
+    </div>
+  <% end %>
+</div>
+<%end%>
 </div>
