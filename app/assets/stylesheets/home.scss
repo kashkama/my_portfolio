@@ -1,14 +1,14 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 // page content
-  .pagecontent {
-    padding: 0px;
-  }
+.pagecontent {
+  padding: 0;
+}
 // end page content
+
 .img-circle {
-  background-size: 100%;
+  background-size: cover;
   position: relative;
   height: 200px;
   width: 200px;
@@ -29,7 +29,7 @@
 }
 
 .listicons {
-  li a p{
+  li a p {
     display: inline;
     padding-left: 9px;
     color: #ffffff;
@@ -69,21 +69,24 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .profile {
   border: 1px solid white;
   margin-top: 90px;
   color: white;
 }
+
 .landinginfo {
   background-color: rgba(103, 102, 103, 0.55);
   height: 100%;
   background-size: cover;
 }
-.contactinfo{
-  color: white;
-  p{
-    font-size: 13px;
 
+.contactinfo {
+  color: white;
+
+  p {
+    font-size: 13px;
   }
 }
 // end self portfolio
