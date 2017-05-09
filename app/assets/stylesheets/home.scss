@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+// page content
+  .pagecontent {
+    padding: 0px;
+  }
+// end page content
 .img-circle {
   background-size: 100%;
   position: relative;
@@ -11,7 +15,7 @@
   margin: 0 auto;
   border-radius: 100%;
   overflow: hidden;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0;
 }
 
 .skills {
@@ -19,15 +23,19 @@
   font-size: 24px;
   text-decoration: none;
 }
+
 .listicons {
   list-style: none;
 }
+
 .listicons {
-  li {
+  li a p{
     display: inline;
     padding-left: 9px;
+    color: #ffffff;
   }
 }
+
 .commentname {
   font-size: 10px;
   color: #0299f9;
@@ -52,11 +60,63 @@
   width: auto;
   height: auto;
 }
+// self portfolio
+
+.self {
+  height: 100%;
+  width: 100%;
+  background-image: url(asset-path("emile-perron-190221.jpg"));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.profile {
+  border: 1px solid white;
+  margin-top: 90px;
+  color: white;
+}
+.landinginfo {
+  background-color: rgba(103, 102, 103, 0.55);
+  height: 100%;
+  background-size: cover;
+}
+.contactinfo{
+  color: white;
+  p{
+    font-size: 13px;
+
+  }
+}
+// end self portfolio
+// contact list
+
+.contact {
+  height: 30px;
+  width: 150px;
+  background-color: #303030;
+
+  p {
+    font-size: 10px;
+  }
+}
+// end contact
 // skills
 
-.skill {
+div.skill {
   height: 100px;
-  width: 100px;
+  width: 120px;
   color: #ffffff;
   background-color: #68686b;
+  border-radius: 25px;
+  background-size: cover;
+  margin-top: 5px;
 }
+
+img.skill {
+  height: 100px;
+  width: 120px;
+  color: #ffffff;
+  background-color: #68686b;
+  border-radius: 25px;
+  background-size: cover;
+}
+// skill end
