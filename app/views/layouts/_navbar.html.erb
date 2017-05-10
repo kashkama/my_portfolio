@@ -9,11 +9,27 @@
       <li class="hover"><%= link_to "About",   '#about' %></li>
       <li class="hover"><%= link_to "Blog", "#blog"%></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="hover"><%= link_to "Tel:(+254)701089898"%></li>
-      <li class="hover"><%= link_to "Sign up", new_user_registration_path %></li>
-      <li class="hover"><%= link_to "Sign in", user_session_path %></li>
-    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hover"><%= link_to "Tel:(+254)701089898"%></li>
+        <% if user_signed_in? %>
+
+        <!-- user profile -->
+        <!-- sign out -->
+        <li , class="hover">
+          <%=link_to "sign out", destroy_user_session_path, method: :delete%>
+        </li>
+      <% else %>
+        <!-- signUp -->
+        <li class="hover">
+          <%= link_to "Signup",new_user_registration_path, class:"btn"%>
+        </li>
+        <!-- SignIn -->
+        <li class="hover">
+          <%= link_to "Login",new_user_session_path, class:"btn"%>
+        </li>
+        <% end %>
+      </ul>
+
   </div>
 </nav>
 </header>

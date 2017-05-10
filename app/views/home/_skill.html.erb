@@ -3,9 +3,11 @@
 <div class="container text-center">
 
   <h1><%= @category.language%></h1><br/><hr/>
-  <%= image_tag @category.image.url(:medium) %>
+  <div class="btn btn-secondary">
+    <%= image_tag @category.image.url(:medium) %>
+  </div>
   <div class="rating">
-    <p><%= @category.rating%>%</p>
+    <p class="btn btn-secondary"><%= @category.rating%>% Experience</p>
   </div>
   <p><%= @category.description%></p>
   <hr/>
@@ -15,8 +17,7 @@
   <% if @category.projects.any?%>
   <ul class="listdecorations">
     <% @category.projects.each do |project|%>
-      <li><h2><%= project.project%></h2></li>
-      <li><i class="fa fa-github fa-2x" aria-hidden="true"></i> <%= link_to "github", project.link, :target => "_blank" %></li>
+      <li><h2><%= link_to project.project, project.link, :target => "_blank"%></h2></li>
       <li><%= project.description%><br/></li>
       <hr/>
     <%end%>

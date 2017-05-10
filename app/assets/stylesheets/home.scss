@@ -56,7 +56,6 @@
 
 .projectsection {
   border-radius: 25px;
-  border: 2px solid #303030;
   padding: 20px;
   width: auto;
   height: auto;
@@ -64,23 +63,22 @@
 // self portfolio
 
 .self {
-  height: 100%;
+  height: auto;
   width: 100%;
-  background-image: url(asset-path("emile-perron-190221.jpg"));
-  background-size: cover;
+  background-image: url(asset-path("landing2.jpg"));
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .profile {
-  border: 1px solid white;
   margin-top: 90px;
   color: white;
 }
 
 .landinginfo {
-  background-color: rgba(103, 102, 103, 0.55);
-  height: 100%;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.49);
+  height: auto;
+  background-size: 100%
 }
 
 .contactinfo {
@@ -116,9 +114,11 @@ div.skill {
 }
 
 .btn-secondary:hover {
-  color: #292b2c;
   background-color: #e6e6e6;
   border-color: #adadad;
+  p i{
+    color: #68686b;
+  }
 }
 
 .btn-secondary {

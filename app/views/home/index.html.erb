@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <div class="pagecontent">
-
-  <% if user_signed_in? %>
-  <li class="listdecorations">
-    <%= link_to('Logout', destroy_user_session_path, class:"btn", :method => :delete) %>
-  </li>
-  <% end %>
-
   <!-- Page Content -->
   <div>
 
@@ -17,7 +10,7 @@
         <div class="col-md-8">
           <div class="profile text-center">
             <img class="img-circle cover" <%= image_tag('owen.png')%>
-            <p>Full Stack Software Developer</p>
+            <h2>Full Stack Software Developer</h2>
           </div>
         </div>
 
