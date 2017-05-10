@@ -6,8 +6,8 @@
 <% @categories.each() do |category|%>
 <div class="col-sm-4 col-xs-6 col-md-4">
   <%= link_to skill_home_path(category), :action => 'go' do %>
-    <div class="skill">
-      <img class="skill" title= <%= category.language%> <%= image_tag(category.image)%>
+    <div class="skill btn btn-secondary">
+      <p class="languagefont"><%= category.language%></p>
     </div>
   <% end %>
 </div>
