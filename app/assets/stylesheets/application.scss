@@ -18,8 +18,8 @@
 @import "categories.scss";
 @import "projects.scss";
 @import "home.scss";
-@import "posts.scss";
-// navbar
+@import "posts.scss"; // navbar
+
 .navbar-fixed-bottom,
 .navbar-fixed-top {
   position: fixed;
@@ -87,9 +87,7 @@ li.hover:hover {
   line-height: 20px;
   height: 50px;
 }
-
 // yield
-
 .yield {
   font-family: Monospace;
   font-size: 18px;
@@ -108,55 +106,16 @@ li.hover:hover {
 }
 // footer
 
-.footer {
-  background-color: rgba(0, 0, 0, 0.70);
-  border-color: #968c8c;
+footer {
+  color: white;
 }
 
-.footerposition {
-  bottom: 0;
-  width: 100%;
+footer h3 {
+  margin-bottom: 30px;
 }
 
-.title {
-  font-weight: bolder;
-  color: #ffffff;
-}
-
-.fa-twitter {
-  color: #4099FF;
-}
-
-.fa-facebook {
-  color: #3B5998;
-}
-
-.fa-youtube-play {
-  color: #e52d27;
-}
-
-.fa-rss {
-  color: #FF6600;
-}
-
-.fa-vine {
-  color: #00a478;
-}
-
-.fa-flickr {
-  color: #ff0084;
-}
-
-.fa-twitch {
-  color: #6441A5;
-}
-
-.fa-linkedin {
-  color: #007bb6;
-}
-
-.fa {
-  opacity: 0.7;
-  transition: 1s;
-  -webkit-transition: 1s;
+footer .footer-above {
+  padding-top: 50px;
+  background: linear-gradient(rgba(28, 25, 25, 0.72),rgba(28, 25, 25, 0.72)), url(asset-path('landing2.jpg'));
+  padding-bottom: 50px;
 }
