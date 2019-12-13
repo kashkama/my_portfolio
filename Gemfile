@@ -17,7 +17,7 @@ source 'https://rubygems.org'
   gem 'coffee-rails', '~> 4.2'
   gem 'jquery-rails'
   gem 'turbolinks', '~> 5'
-  gem 'devise', '~> 4.2', '>= 4.2.1'
+  gem 'devise', '~> 4.7'
 
   # gem 'jbuilder', '~> 2.5'
 
